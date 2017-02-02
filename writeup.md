@@ -16,7 +16,8 @@ The goals / steps of this project are the following:
 [image1]: ./output_images/undistorted.jpg "Undistorted"
 [image2]: ./output_images/thresholded.jpg "Thresholded"
 [image3]: ./output_images/warped.jpg "Warped"
-[image4]: ./output_images/final.jpg "Final"
+[image4]: ./output_images/polylines.jpg "Polylines"
+[image5]: ./output_images/final.jpg "Final"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
@@ -42,7 +43,7 @@ Example filtered image:
 
 #### 3. Image Warping
 
-I then warped the image to obtain a birds-eye view of the road.
+I then warped the image to obtain a bird's-eye view of the road.
 
 To do so, I used the `cv2.getPerspectiveTransform()` method (in `__init__()` of the [Warper](warper.py) class) with these source and destination points:
 
@@ -79,19 +80,19 @@ I then created a polygon using the curves of each computed polyline and warped b
 
 I finally drew this polygon on the undistorted image.
 
-![alt text][image4]
+![alt text][image5]
 
 ---
 
-###Pipeline (video)
+### Pipeline (video)
 
 Here's a [link to my video result](./project_video_done.mp4)
 
 ---
 
-###Discussion
+### Discussion
 
-####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
+#### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
 The implementation overall went pretty smoothly.
 

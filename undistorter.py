@@ -14,7 +14,6 @@ class Undistorter:
             self.objpoints = None
             self.imgpoints = None
             self.shape = None
-            pass
 
         if self.objpoints is None or self.imgpoints is None or self.shape is None:
             self.find_corners()
